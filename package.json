@@ -1,27 +1,24 @@
 {
-  "name": "xpens-backend",
+
+  "engines":{
+    "node":"16.15.1"
+
+  },
+  "name": "plot_backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon app.js"
+    "start": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Vishnurr2k01/Xpens-backend.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Vishnurr2k01/Xpens-backend/issues"
-  },
-  "homepage": "https://github.com/Vishnurr2k01/Xpens-backend#readme",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.18.1",
-    "mongoose": "^6.6.1",
-    "nodemon": "^2.0.20"
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-generator": "^4.16.1",
+    "mongoose": "^6.7.0",
+    "path": "^0.12.7"
   }
 }
