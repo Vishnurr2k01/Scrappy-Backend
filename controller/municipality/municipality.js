@@ -38,4 +38,26 @@ const getMunicipality = async (req, res) => {
     }   
 }
 
-module.exports = {getMunicipality,addMunicipality}
+const updateMunicipality = async (req, res) => {
+    const { id } = req.params
+    const {status,accepted,resolved} = req.body
+    try {
+        const municipality = await Municipality.findByIdAndUpdate(id, {
+            status,
+            accepted,
+            resolved
+        }, { new: true })
+        await municipality.save()
+        return res.status(200).json({
+            success:true,
+            message:"fetched successfully",
+            municipality
+        })
+    }
+     catch (err) {
+        res.status(500).json({err})
+    }
+}
+module.exports = {getMunicipality,addMunicipality,updateMunicipality}
+
+
