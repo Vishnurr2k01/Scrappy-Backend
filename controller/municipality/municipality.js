@@ -1,13 +1,16 @@
 const Municipality = require('../../model/municipality/municipality')
 
 const addMunicipality = async (req, res) => {
-    const { title, photo, date, location } = req.body
+    const { title, photo, date, location,status,accepted,resolved } = req.body
    
    try{ const municipality = new Municipality({
         title,
         photo,
         date,
-        location
+        location,
+        status,
+        accepted,
+        resolved
     })
     await municipality.save()
      return res.status(201).json({

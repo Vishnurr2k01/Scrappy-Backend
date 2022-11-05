@@ -6,7 +6,19 @@ const Items=new Schema({
     photo:String,
     date:String,
     time:String,
-    address:String
+    address:String,
+    status:{
+        type:Boolean,
+        default:false
+    },
+    accepted:{
+        type:Boolean,
+        default:false
+    },
+    resolved:{
+        type:Boolean,
+        default:false
+    }
 
 })
 const ItemsSchema=mongoose.model("Items",Items)
