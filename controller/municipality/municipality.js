@@ -27,11 +27,7 @@ const addMunicipality = async (req, res) => {
 const getMunicipality = async (req, res) => {
     try{
         const municipality = await Municipality.find()
-        return res.status(200).json({
-            success:true,
-            message:"fetched successfully",
-            municipality
-        })
+        return res.status(200).json({municipality:municipality})
     }
     catch(err){
         res.status(500).json({err})
