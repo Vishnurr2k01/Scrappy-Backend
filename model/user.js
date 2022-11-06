@@ -14,7 +14,7 @@ const User = new Schema({
     type: String,
   },
   address: String,
-  username: String,
+  phone: String,
   userrole:String
 
 });

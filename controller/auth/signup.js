@@ -5,7 +5,7 @@ const bcrypt = require("bcryptjs");
 const UserSchema = require("../../model/user");
 
 module.exports.signup = async (req, res) => {
-  var { email, password,name,address,username,userrole} = req.body;
+  var { email, password,name,address,phone,userrole} = req.body;
   try {
     const user = await UserSchema.findOne({ email });
     if (user) {
@@ -21,11 +21,10 @@ module.exports.signup = async (req, res) => {
 
     const newUser = new UserSchema({
       email,
-
       password,
       name,
       address,
-      username,
+      phone,
       userrole
     });
 
