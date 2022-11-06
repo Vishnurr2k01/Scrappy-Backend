@@ -30,7 +30,6 @@ app.get("/", (req, res) => {
   res.send("API is working");
 });
 app.use("/auth", require("./routes/auth"));
-app.use("/land", require("./routes/land/lease"));
 app.use("/items",require("./routes/items"));
 app.use("/complaints",require('./routes/municipality'));
 // app.use("/getprice", require("./routes/getprice"));
