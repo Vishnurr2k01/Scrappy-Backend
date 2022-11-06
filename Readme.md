@@ -1,21 +1,21 @@
 Backend hosted at https://scrappy-beta.herokuapp.com
 
-<h2>Auth</h2>
+<h2> Auth</h2>
 
-<h4> /auth</h4>
+<h4> basic route : <b>/auth </b> </h4>
 
 <ul>
-<li> /signup 
+<li> <b>/signup</b> 
 <br> email , password ,name,address,phone </li>
-<li> /login
+<li> <b>/login </b>
 <br> email , password  </li>
 </ul>
 
 <h2>Scrap Collection</h2>
-<h4> /items</h4>
+<h4>basic route : <b> /items</b></h4>
 
 <ul>
-<li> /setitems (post): to add items 
+<li> <b>/setitems</b> (post): to add items 
 <br>  items,
     photo,
     date,
@@ -25,17 +25,17 @@ Backend hosted at https://scrappy-beta.herokuapp.com
     accepted,
     resolved
 </li>
-<li> /getitems (get) : to get list of all orders made
+<li> <b>/getitems</b> (get) : to get list of all orders made
  </li>
- <li> /updateitems/:id (post) : to update  orders made
+ <li> <b>/updateitems/:id </b> (post) : to update  orders made
  </li>
 </ul>
 
 <h2>Register Complaint</h2>
-<h4> /complaints</h4>
+<h4> basic route : <b>/complaints </b> /h4>
 
 <ul>
-<li> / (post) : to register a complaint
+<li> <b>/</b> (post) : to register a complaint
 <br>  items,
     photo,
     date,
@@ -45,9 +45,9 @@ Backend hosted at https://scrappy-beta.herokuapp.com
     accepted,
     resolved
 </li>
-<li> / (get) : to get list of all complaints
+<li> <b>/</b> (get) : to get list of all complaints
  </li>
- <li> /:id (post): to update  a complaint
+ <li> <b>/:id</b> (post): to update  a complaint
  </li>
 </ul>
 
